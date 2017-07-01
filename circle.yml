@@ -16,4 +16,4 @@ database:
     - bundle exec rake db:migrate RAILS_ENV=test
 test:
   override:
-    - bundle exec rspec spec/
+    - rake test
