@@ -7,12 +7,12 @@ describe Web::Views::Books::Index do
   let(:view)      { Web::Views::Books::Index.new(template, exposures) }
   let(:rendered)  { view.render }
 
-  it 'exposes #foo' do
+  it 'exposes #books' do
     view.books.must_equal exposures.fetch(:books)
   end
 
   describe 'when there are no books' do
-    it 'showss a placeholder message' do
+    it 'shows a placeholder message' do
       rendered.must_include('<p class="placeholder">There are no books yet.</p>')
     end
   end
