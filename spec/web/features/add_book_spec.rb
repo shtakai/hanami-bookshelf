@@ -32,5 +32,4 @@ describe 'Add a book' do
     assert page.has_content?('Title must be filled')
     assert page.has_content?('Author must be filled')
   end
-
 end

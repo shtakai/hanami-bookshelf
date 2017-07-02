@@ -21,5 +21,4 @@ describe Web::Controllers::Books::Index do
     action.call(params)
     action.exposures[:books].must_equal [@book]
   end
-
 end

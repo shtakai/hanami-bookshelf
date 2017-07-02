@@ -10,9 +10,10 @@ dependencies:
         timeout: 180
 database:
   pre:
-    #- mv config/database.yml.ci config/database.yml
+
   override:
     - HANAMI_ENV=test bundle exec hanami db prepare
 test:
   override:
+    - bundle exec rubocop
     - bundle exec rake test

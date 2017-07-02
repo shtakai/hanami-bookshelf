@@ -15,5 +15,4 @@ describe Web::Views::Books::New do
     rendered.must_include('Title must be filled')
     rendered.must_include('Author must be filled')
   end
-
 end

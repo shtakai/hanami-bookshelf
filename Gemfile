@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-gem 'hanami',       '~> 1.0'
+gem 'hanami', '~> 1.0'
 gem 'hanami-model', '~> 1.0'
-
+gem 'rake'
 gem 'sqlite3'
 
 group :development do
@@ -14,14 +13,15 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'rubocop'
+  gem 'rubocop-rspec'
 end
 
 group :test do
-  gem 'minitest'
   gem 'capybara'
+  gem 'minitest'
 end
 
 group :production do
   # gem 'puma'
-  gem 'rubocop', require: false
 end

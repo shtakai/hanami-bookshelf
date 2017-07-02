@@ -32,5 +32,4 @@ describe Web::Views::Books::Index do
       rendered.wont_include('<p class="placeholder">There are no books yet.</p>')
     end
   end
-
 end
