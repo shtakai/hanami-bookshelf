@@ -34,3 +34,6 @@ Lint/EndAlignment:
   - variable
   - start_of_line
   AutoCorrect: false
+
+Lint/EnforcedStyleAlignWith:
+  Enabled: true
