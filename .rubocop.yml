@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.3.3
+  TargetRubyVersion: 2.3
 
   Include:
     - '**/Rakefile'
@@ -24,5 +24,13 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Enabled: false
 
+# Supports --auto-correct
 Lint/EndAlignment:
+  Description: Align ends correctly.
   Enabled: true
+  AlignWith: keyword
+  SupportedStyles:
+  - keyword
+  - variable
+  - start_of_line
+  AutoCorrect: false

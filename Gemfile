@@ -13,7 +13,8 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
-  gem 'rubocop', '~> 0.49.1', require: false
+  gem 'rubocop'
+  gem 'rubocop-rspec'
 end
 
 group :test do
