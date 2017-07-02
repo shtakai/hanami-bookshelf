@@ -28,12 +28,9 @@ Metrics/LineLength:
 Lint/EndAlignment:
   Description: Align ends correctly.
   Enabled: true
-  AlignWith: keyword
+  EnforcedStyleAlignWith: keyword
   SupportedStyles:
   - keyword
   - variable
   - start_of_line
   AutoCorrect: false
-
-Lint/EnforcedStyleAlignWith:
-  Enabled: true
