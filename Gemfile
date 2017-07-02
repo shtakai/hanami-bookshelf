@@ -23,4 +23,5 @@ end
 
 group :production do
   # gem 'puma'
+  gem 'rubocop', require: false
 end
