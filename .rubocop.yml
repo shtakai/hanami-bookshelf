@@ -10,8 +10,16 @@ AllCops:
     - 'script/**/*'
     - !ruby/regexp /old_and_unused\.rb$/
 
-Style/FrozenStringLiteralComment:
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Style:
   Enabled: false
 
-Style/SymbolArray:
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/LineLength:
   Enabled: false
