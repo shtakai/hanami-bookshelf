@@ -25,4 +25,4 @@ Metrics/LineLength:
   Enabled: false
 
 Lint/EndAlignment:
-  EnforcedStyleAlignWith: variable
+  Enabled: true
