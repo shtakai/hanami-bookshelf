@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'hanami',       '~> 1.0'
 gem 'hanami-model', '~> 1.0'
-
 gem 'sqlite3'
 
 group :development do
@@ -14,6 +13,8 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'rubocop', require: false
+  gem 'rubocop-junit-formatter'
 end
 
 group :test do
@@ -23,5 +24,4 @@ end
 
 group :production do
   # gem 'puma'
-  gem 'rubocop', require: false
 end

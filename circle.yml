@@ -10,9 +10,10 @@ dependencies:
         timeout: 180
 database:
   pre:
-    - bundle exec rubocop -r $(bundle show rubocop-junit-formatter)/lib/rubocop/formatter/junit_formatter.rb -c .rubocop.yml --format RuboCop::Formatter::JUnitFormatter --out $CIRCLE_TEST_REPORTS/rubocop/rubocop.xml lib
+
   override:
     - HANAMI_ENV=test bundle exec hanami db prepare
 test:
   override:
+    - bundle exec rubocop -r $(bundle show rubocop-junit-formatter)/lib/rubocop/formatter/junit_formatter.rb -c .rubocop.yml --format RuboCop::Formatter::JUnitFormatter --out $CIRCLE_TEST_REPORTS/rubocop/rubocop.xml lib
     - bundle exec rake test
