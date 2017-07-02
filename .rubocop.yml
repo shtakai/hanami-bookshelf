@@ -23,3 +23,6 @@ Metrics/BlockLength:
 
 Metrics/LineLength:
   Enabled: false
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
